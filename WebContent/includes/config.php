@@ -5,7 +5,7 @@ $config = array(
 		'vk_url' => 'https://vk.com/club128897021',
 		'fb_url' => 'https://www.facebook.com/profile.php?id=100013916626351&fref=ts',
 		'twitter' => 'https://twitter.com/IroksManager?lang=ru',
-		'youtube' => 'https://www.youtube.com/channel/UCVSNmat7wTayMDHm4-1gerQ',
+		'youtube' => 'https://www.youtube.com/channel/UCnsNhbvvVO2aZCh7wJIfd2g',
 		'db' => array(
 				'server' => 'localhost',
 				'username' => 'iroks_site',
@@ -15,3 +15,7 @@ $config = array(
 	);
 
 require "db.php";
+
+
+
+// https://www.youtube.com/channel/UCVSNmat7wTayMDHm4-1gerQ - попередній аккаунт youtube

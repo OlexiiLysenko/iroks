@@ -418,22 +418,7 @@
         $(function(){
             $('[data-toggle="tooltip"]').tooltip();
             
-            $('#da-slider').cslider({
-
-            	current		: 1, 	
-            	// index of current slide
-            	
-            	bgincrement	: 50,	
-            	// increment the background position 
-            	// (parallax effect) when sliding
-            	
-            	autoplay	: true,
-            	// slideshow on / off
-            	
-            	interval	: 10000  
-            	// time between transitions
-            	
-            });
+        
              $('.fancybox').fancybox();
         });
     </script>

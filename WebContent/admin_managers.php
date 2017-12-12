@@ -230,6 +230,7 @@ if($_SESSION["auth"] != "YES")
           <ul class="nav navbar-nav">
             <li><a href="admin_panel.php">Підписані</a></li>
             <li><a href="admin_news.php">Новини</a></li>
+            <li><a href="admin_press-conference.php">Пресс-конференції</a></li>
             <li><a href="admin_topics.php">Статті</a></li>
             <li><a href="admin_documents.php">Документи</a></li>
             <li><a href="news_to_emails.php">Розсилка</a></li>
@@ -262,6 +263,7 @@ if($_SESSION["auth"] != "YES")
                 <li><a type="button" data-toggle="modal" data-target="#addTopic">Додати Статтю</a></li>
                 <li><a type="button" data-toggle="modal" data-target="#addDocument">Додати Документ</a></li>
                 <li><a type="button" data-toggle="modal" data-target="#addComment">Коментар Предст.забуд.</a></li>
+                 <li><a type="button" data-toggle="modal" data-target="#addPressConference">Додати Пресс-конференцію</a></li>
                 <!-- <li><a href="#">Розсилка</a></li> -->
               </ul>
             </div>
@@ -507,6 +509,72 @@ if($_SESSION["auth"] != "YES")
 
 
     <!-- Modals -->
+
+<!-- Add New Press-conference -->
+    <div class="modal fade" id="addPressConference" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+
+
+              <form action="admin_press-conference.php" method="POST" enctype="multipart/form-data">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Додати Пресс-конференцію</h4>
+              </div>
+              <div class="modal-body">
+                
+                    <div class="form-group">
+                      <label>Заголовок Конференції</label>
+                      <input type="text" class="form-control" placeholder="Назва Пресс-конференції" name="title">
+                    </div>
+
+                    <div class="form-group">
+                      <label>URL-посилання на YouTube сторінку з відео-конференцією</label>
+                      <input type="text" class="form-control" placeholder="https://www.youtube.com/watch?v=СКОПІЙОВАНИЙ_ТЕКСТ" name="video">
+                      <p class="help-block" style="color: red;">*УВАГА!!! В це поле потрібно вставити ЛИШЕ останній шматок тексту посилання з YouTube, що йде в адресній строці браузера одразу після знаку "<span style="color: blue;">=</span>", наприклад, з посилання "<span style="color: blue;">https://www.youtube.com/watch?v=<span style="color: green;">W7bMYWLoSxY</span></span>" вставляємо у це поле тільки "<span style="color: green;">W7bMYWLoSxY"</span></p>
+                    </div>
+
+
+                    <div class="form-group">
+                      <label for="file">Завантажити лицьове фото</label>
+                      <input type="file" id="file" name="image">
+                      <p class="help-block">Будь-ласка, попередньо підготуйте картинку - зробіть її квадратною і у розмірі не більше 1000х1000 пікселів!</p>
+                    </div>
+                    <!-- <button type="submit" class="btn btn-default">Завантажити</button> -->
+<p> <br> </p>
+                    <div class="form-group">
+                      <label>Опис Пресс-конференції</label>
+                      <textarea id="text3" rows="20" class="form-control" placeholder="Текст Пресс-конференції" name="text"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="file">Завантажити фото в кінець новини</label>
+                      <p class="help-block">Ці фото будуть додані в сам низ новини окремим блоком</p>
+                      <input type="file" id="file1" name="image1">
+                      <input type="file" id="file2" name="image2">
+                      <input type="file" id="file3" name="image3">
+                      <input type="file" id="file4" name="image4">
+                      <input type="file" id="file5" name="image5">
+                      <input type="file" id="file6" name="image6">
+                      <input type="file" id="file7" name="image7">
+                      <input type="file" id="file8" name="image8">
+                      <input type="file" id="file9" name="image9">
+                      <input type="file" id="file10" name="image10">
+                    </div>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Закрити</button>
+                <button type="submit" class="btn btn-primary" name="do_submit">Додати Конференцію на сайт!</button>
+              </div>
+              </form>
+
+                <p><br></p>
+      
+    </div>
+  </div>
+</div>
+
  <!-- Add News Page -->
     <div class="modal fade" id="addPage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">

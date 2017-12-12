@@ -28,7 +28,7 @@
 
 	function article_delete($id) {
 
-		if ($id == 9 || $id == 10){
+		if ($id == 9 || $id == 10 || $id == 15 || $id == 17){
 			header('Location: change_admin_password.php');
 		} else {
 			$articles  = R::findOne( 'admins', ' id = ? ', [ $_GET['id'] ] );

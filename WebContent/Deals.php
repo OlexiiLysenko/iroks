@@ -89,14 +89,15 @@
               <ul class="nav navbar-nav">
               
                 <li><a id="nav1" href="http://iroks.com.ua/index.php">ПРО НАС</a></li>
-                <li><a id="nav3" href="http://iroks.com.ua/Rooms4.php">КВАРТИРИ</a></li>
+                <li><a id="nav3" href="http://iroks.com.ua/Rooms2.php">КВАРТИРИ</a></li>
                 <li><a id="nav2" href="http://iroks.com.ua/News.php">НОВИНИ</a></li>
-                <li><a id="nav4" href="http://iroks.com.ua/Deals3.php" style="color:#fff;">ДОКУМЕНТИ</a></li>
+                <li><a id="nav4" href="http://iroks.com.ua/Documents.php" style="color:#fff;">ДОКУМЕНТИ</a></li>
                 <li><a id="nav5" href="http://iroks.com.ua/Feedback.php">ВІДГУКИ</a></li>
                 <li><a id="nav7" href="http://iroks.com.ua/Credits.php">РОЗТЕРМІНУВАННЯ</a></li>
                 <li><a id="nav6" href="http://iroks.com.ua/Contacts.php">КОНТАКТИ</a></li>
                 <li><a id="nav8" href="http://iroks.com.ua/Topics.php">СТАТТІ</a></li>
                 <li><a id="nav8" href="http://iroks.com.ua/Shareholders.php">АКЦІОНЕРАМ</a></li>
+                <li><a id="nav8" href="http://iroks.com.ua/press-conference.php">ПРЕСС-КОНФЕРЕНЦІЇ</a></li>
               </ul>
         </div> 
          
@@ -169,9 +170,9 @@
      <div class="row">
       <div class="container">
         <ul class="nav nav-tabs">
-          <li>
+         <!--  <li>
             <a id="Deals" href="http://iroks.com.ua/Deals3.php#Jump">вул. Тернопільська, 42</a>
-          </li>
+          </li> -->
           <li>
             <a id="Dozvil" href="http://iroks.com.ua/Documents.php#Jump">вул.Величковського, 61-62</a>
           </li>
